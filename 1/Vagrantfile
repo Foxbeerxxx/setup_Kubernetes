@@ -2,7 +2,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/jammy64"
   config.vm.synced_folder ".", "/vagrant", disabled: true
 
-  BRIDGE_IF = "enp2s0"  #  физический интерфейс LAN
+  BRIDGE_IF = "wlx90de80b68883"  #  физический интерфейс LAN
 
   NODES = [
     {name: "k8s-m1", ip: "192.168.1.141", mem: 2048, cpus: 2},
